@@ -58,6 +58,9 @@ body{
 .left{
     padding-left: 100px;
 }
+.br_sp{
+    display: none;
+}
 
 .section2 footer{
     max-width: 1152px;
@@ -143,6 +146,9 @@ footer{
         padding-left: 0%;
         padding-top: 20px;
         text-align: center;
+    }
+    .br_sp{
+        display: block;
     }
     .spimg_01{
         display: block;
