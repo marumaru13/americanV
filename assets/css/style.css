@@ -2,25 +2,34 @@
     width: 1152px;
     height: 100px;
     background-color: white;
-    display: flex;
+    
+    
 }
   
 .inner {
     padding-top: 30px;
+    display: flex;
+    justify-content: flex-end;
     
+    /* text-align: end; */
+    
+}
+.menu{
+    text-align: end;
 }
 /* メイン画像 */
 
 .box{
     position: relative; /* 基準位置とする */
     width: 1152px;
-    height: 700px;
-    margin: 0;
+    height: 630px;
+    
+    margin: auto;
 }
 
 .img_01{
     top: 100px;
-    left: 10px;
+    left: 85px;
     width: 1000px;       
     height: 500px;     
     position: absolute; /* 相対位置に指定 */
@@ -29,17 +38,22 @@
   
 .img_02{
     
-    top: 20px;
+    top: -60px;
     left: -50px;
     position: absolute; /* 相対位置に指定 */
 
 }
 .img_03{
 
-    bottom: 50px;
+    bottom: 0px;
     right: 25px;
     position: absolute; /* 相対位置に指定 */
 }
+
+.left{
+    padding-left: 100px;
+}
+
 .section2 footer{
     max-width: 1152px;
     margin: 0;
