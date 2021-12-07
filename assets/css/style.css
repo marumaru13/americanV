@@ -50,6 +50,16 @@
     position: absolute; /* 相対位置に指定 */
 }
 
+
+.spimg_01 {
+    display: none;
+}
+
+.spimg_03{
+    display: none;
+
+}
+
 .left{
     padding-left: 100px;
 }
@@ -112,6 +122,34 @@ footer{
 }
 
 @media screen and (max-width: 768px) {
+
+    
+    .box{
+        width: 768px;
+        height: auto;
+        align-items: center;
+    }
+    .img_01{
+        display: none;
+    }
+    .img_02{
+        position: static;
+        /* align-items: center; */
+        height: 200px;
+        width: auto;
+    }
+    .img_03{
+        display: none;
+    }
+    .inner{
+        display: none;
+    }
+    .left{
+        display: none;
+    }
+    
+
+
 
     .contents{
         width: 100%;
