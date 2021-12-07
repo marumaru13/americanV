@@ -11,11 +11,6 @@
     display: flex;
     justify-content: flex-end;
     
-    /* text-align: end; */
-    
-}
-.menu{
-    text-align: end;
 }
 /* メイン画像 */
 
@@ -23,8 +18,10 @@
     position: relative; /* 基準位置とする */
     width: 1152px;
     height: 630px;
-    
     margin: auto;
+}
+.menu{
+    padding-right: 60px;
 }
 
 .img_01{
