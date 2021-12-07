@@ -143,7 +143,20 @@ footer{
         display: none;
     }
     .left{
-        display: none;
+        padding-left: 0%;
+        padding-top: 20px;
+        text-align: center;
+    }
+    .spimg_01{
+        display: block;
+        width: 100%;
+        height: auto;
+        margin-top: 20px;
+    }
+    .spimg_03{
+        display: block;
+        position: absolute;
+        top: 260px;
     }
     
 
