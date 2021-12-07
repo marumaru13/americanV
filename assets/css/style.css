@@ -1,4 +1,44 @@
-<<<<<<< HEAD
+.content {
+    width: 1152px;
+    height: 100px;
+    background-color: white;
+    display: flex;
+}
+  
+.inner {
+    padding-top: 30px;
+    
+}
+/* メイン画像 */
+
+.box{
+    position: relative; /* 基準位置とする */
+    width: 1152px;
+    height: 700px;
+}
+
+.img_01{
+    top: 100px;
+    left: 10px;
+    width: 1000px;       
+    height: 500px;     
+    position: absolute; /* 相対位置に指定 */
+    background-color: white;
+}
+  
+.img_02{
+    
+    top: 20px;
+    left: -50px;
+    position: absolute; /* 相対位置に指定 */
+
+}
+.img_03{
+
+    bottom: 50px;
+    right: 25px;
+    position: absolute; /* 相対位置に指定 */
+}
 h1{
     font-size: 40px;
     text-align: center;
@@ -14,7 +54,7 @@ img{
     width: 400px;
     height: auto;
 }
-.box{
+.box2{
     width: 400px;
     height: 500px;
     position: relative;
@@ -70,49 +110,3 @@ footer{
     }
     
 }
-=======
-/* 右上メニューPC */
-.content {
-    width: 1152px;
-    height: 100px;
-    background-color: white;
-    display: flex;
-}
-  
-.inner {
-    padding-top: 30px;
-    
-}
-/* メイン画像 */
-
-.box{
-    position: relative; /* 基準位置とする */
-    width: 1152px;
-    height: 700px;
-}
-
-.img_01{
-    top: 100px;
-    left: 10px;
-    width: 1000px;       
-    height: 500px;     
-    position: absolute; /* 相対位置に指定 */
-    background-color: white;
-}
-  
-.img_02{
-    
-    top: 20px;
-    left: -50px;
-    position: absolute; /* 相対位置に指定 */
-
-}
-.img_03{
-
-    bottom: 50px;
-    right: 25px;
-    position: absolute; /* 相対位置に指定 */
-}
-  
-  
->>>>>>> 3396962d9c6d6e020f21ee4486564584ebfebf08
