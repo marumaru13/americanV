@@ -3,17 +3,17 @@
     height: 100px;
     background-color: white;   
 }
-  
+body{
+    font-family: "游ゴシック体", YuGothic, "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック", "Yu Gothic", sans-serif;
+}
 .inner {
     padding-top: 30px;
     display: flex;
     justify-content: flex-end;
     position: absolute;
     padding-left: 770px;
-    
 }
 /* メイン画像 */
-
 .box{
     position: relative; /* 基準位置とする */
     width: 1152px;
@@ -24,7 +24,6 @@
 .menu{
     padding-right: 60px;
 }
-
 .img_01{
     top: 100px;
     left: 85px;
@@ -33,7 +32,6 @@
     position: absolute; /* 相対位置に指定 */
     background-color: white;
 }
-  
 .img_02{
     
     top: -60px;
@@ -55,7 +53,6 @@
 
 .spimg_03{
     display: none;
-
 }
 
 .left{
@@ -158,10 +155,6 @@ footer{
         position: absolute;
         top: 260px;
     }
-    
-
-
-
     .contents{
         width: 100%;
         flex-direction: column;
