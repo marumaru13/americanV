@@ -10,6 +10,8 @@
     padding-top: 30px;
     display: flex;
     justify-content: flex-end;
+    position: absolute;
+    padding-left: 770px;
     
 }
 /* メイン画像 */
@@ -19,6 +21,7 @@
     width: 1152px;
     height: 630px;
     margin: auto;
+    margin-top: 100px;
 }
 .menu{
     padding-right: 60px;
