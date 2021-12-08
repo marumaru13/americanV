@@ -1,43 +1,10 @@
-<!DOCTYPE html>
-<html lang="ja">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./assets/css/reset.css">
-    <link rel="stylesheet" href="./assets/css/style.css">
-    <title>American Villege</title>
-</head>
-
-<body>
-    <header>
-        <div class="section1">
-            <div　class="content">
-                <div class="inner">
-                    <p class="menu">Menu01</p>
-                    <p class="menu">Menu02</p>
-                    <p class="menu">Menu03</p>
-                    <p class="menu">Menu04</p>
-                </div>
-                <div class="box">
-                    <img src="./assets/img/visual_1_pc.png" alt="" class="img_01">
-                    <img src="./assets/img/logo.png" alt="" class="img_02">
-                    <img src="./assets/img/visual_text_pc.png" alt="" class="img_03">
-                </div>
-                <img src="./assets/img/visual_1_sp.png" alt="" class="spimg_01">
-                <img src="./assets/img/visual_text_sp.png" alt="" class="spimg_03">
-                <p class="left">進化し続ける『街』<br class="br_sp">アメリカンビレッジマガジン</p>
-
-            </div>
-        </div>
-    </header>
-    <main>
+<?php get_header(); ?>
+<main>
         <div class="section2">
             <h1>Latest Articles</h1>
             <div class="contents">
                 <div class="box2">
-                    <img src="./assets/img/post_img_1.png" alt="">
+                    <img src="<?php echo get_template_directory_uri(); ?>/assets/img/post_img_1.png" alt="">
                     <p class="dates">2018/5/20</p>
                     <p class="text">おしゃれカフェがありますよ</p>
                     <div class="btn_box">
@@ -46,7 +13,7 @@
                     </div>
                 </div>
                 <div class="box2">
-                    <img src="./assets/img/post_img_2.png" alt="">
+                    <img src="<?php echo get_template_directory_uri(); ?>/assets/img/post_img_2.png" alt="">
                     <p class="dates">2018/5/19</p>
                     <p class="text">あのネオンはいつ交換するのか！？観覧車の謎に迫る！</p>
                     <div class="btn_box">
@@ -55,7 +22,7 @@
                     </div>
                 </div>
                 <div class="box2">
-                    <img src="./assets/img/post_img_3.png" alt="">
+                    <img src="<?php echo get_template_directory_uri(); ?>/assets/img/post_img_3.png" alt="">
                     <p class="dates">2018/5/18</p>
                     <p class="text">ラソナの社内はこんなのよ</p>
                     <div class="btn_box">
@@ -66,7 +33,7 @@
             </div>
             <div class="contents">
                 <div class="box2">
-                    <img src="./assets/img/post_img_4.png" alt="">
+                    <img src="<?php echo get_template_directory_uri(); ?>/assets/img/post_img_4.png" alt="">
                     <p class="dates">2018/5/20</p>
                     <p class="text">お隣のアラハはハワイ？</p>
                     <div class="btn_box">
@@ -75,7 +42,7 @@
                     </div>
                 </div>
                 <div class="box2">
-                    <img src="./assets/img/post_img_5.png" alt="">
+                    <img src="<?php echo get_template_directory_uri(); ?>/assets/img/post_img_5.png" alt="">
                     <p class="dates">2018/5/19</p>
                     <p class="text">なぜテント？ラソナの人に聞いてみた</p>
                     <div class="btn_box">
@@ -84,7 +51,7 @@
                     </div>
                 </div>
                 <div class="box2">
-                    <img src="./assets/img/post_img_6.png" alt="">
+                    <img src="<?php echo get_template_directory_uri(); ?>/assets/img/post_img_6.png" alt="">
                     <p class="dates">2018/5/18</p>
                     <p class="text">ベイエリアオシャレすぎる問題</p>
                     <div class="btn_box">
@@ -95,11 +62,4 @@
             </div>
         </div>
     </main>
-    <footer>
-        <p>Copyright<small>&copy;</small>Shinohara. ALL RIGHT RESERVED.</p>
-    </footer>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="./assets/js/script.js"></script>
-</body>
-
-</html>
+    <?php get_footer(); ?>
