@@ -138,6 +138,9 @@ footer {
   color: white;
   text-align: center;
 }
+a {
+  text-decoration:none; 
+}
 
 @media screen and (max-width: 768px) {
   .br_sp{
@@ -147,6 +150,11 @@ footer {
     width: 200px;
     height: auto;
     align-items: center;
+    margin-top: 20px;
+  }
+  img{
+    width: 100%;
+    height: auto;
   }
   .img_01 {
     display: none;
@@ -179,20 +187,23 @@ footer {
     position: absolute;
     top: 260px;
   }
-  .contents {
-    width: 100%;
+  .contents{
+    width: auto;
     flex-direction: column;
     align-items: center;
-    padding: 0%;
+    padding-left: 5%;
+    padding-right: 5%;
+    margin: 0;
+    display: block;
   }
   h1 {
     width: 100%;
   }
-  p {
-    font-size: 20px;
+  .box2{
+    width: auto;
   }
-  .box {
-    margin-top: 20px;
+  p {
+    font-size: 15px;
   }
 }
 /*# sourceMappingURL=style.css.map */
