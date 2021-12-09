@@ -1,172 +1,213 @@
 .content {
     width: 1152px;
     height: 100px;
-    background-color: white;   
-}
-body{
+    background-color: white;
+  }
+  
+  body {
     font-family: "游ゴシック体", YuGothic, "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック", "Yu Gothic", sans-serif;
-}
-.inner {
+  }
+  
+  .inner {
     padding-top: 30px;
     display: flex;
     justify-content: flex-end;
     position: absolute;
     padding-left: 770px;
-}
-/* メイン画像 */
-.box{
-    position: relative; /* 基準位置とする */
+  }
+  
+  /* メイン画像 */
+  .box {
+    position: relative;
+    /* 基準位置とする */
     width: 1152px;
     height: 630px;
     margin: auto;
     margin-top: 100px;
-}
-.menu{
+  }
+  .br_sp{
+    display: none;
+  }
+  
+  .menu {
     padding-right: 60px;
-}
-.img_01{
-    top: 100px;
+  }
+  
+  .img_01 {
+    top: 95px;
     left: 85px;
-    width: 1000px;       
-    height: 500px;     
-    position: absolute; /* 相対位置に指定 */
+    width: 1000px;
+    height: 500px;
+    position: absolute;
+    /* 相対位置に指定 */
     background-color: white;
-}
-.img_02{
-    top: -60px;
+  }
+  
+  .img_02 {
+    top: -55px;
     left: -50px;
-    position: absolute; /* 相対位置に指定 */
-
-}
-.img_03{
+    position: absolute;
+    /* 相対位置に指定 */
+  }
+  
+  .img_03 {
     bottom: 0px;
     right: 25px;
-    position: absolute; /* 相対位置に指定 */
-}
-
-
-.spimg_01{
+    position: absolute;
+    /* 相対位置に指定 */
+  }
+  
+  .spimg_01 {
     display: none;
-}
-.spimg_03{
+  }
+  
+  .spimg_03 {
     display: none;
-}
-
-.left{
+  }
+  
+  .left {
     padding-left: 100px;
-}
-
-.section2 footer{
+  }
+  
+  .section2 footer {
     max-width: 1152px;
     margin: 0;
     /* justify-content: space-around; */
-}
-h1{
+  }
+  
+  h1 {
     font-size: 40px;
     text-align: center;
     margin: 50px auto;
-}
-.contents{
+  }
+  
+  .contents {
+    width: 1152px;
+    /* height: 630px; */
     display: flex;
     justify-content: space-around;
+    flex-wrap: wrap;
     padding: 0 70px;
-    margin-bottom: 100px;
-}
-img{
+    margin: 100px 50px;
+  }
+  
+  img {
     width: 350px;
     height: auto;
-}
-.box2{
+  }
+  
+  .box2 {
     width: 350px;
     height: 450px;
     position: relative;
-}
-.box2:hover{
+    margin-top: 50px;
+  }
+  
+  .box2:hover {
     box-shadow: 8px 8px 8px 8px rgba(43, 42, 42, 0.5);
     transition-duration: 2.0s;
-  }
+    .btn_box span{
+        width: 100%;
+        transition: 1.5s;
+    }
 
-.dates,.text{
+  }
+  
+  .dates, .text {
     font-size: 25px;
     margin-top: 15px;
-}
-.btn_box{
+  }
+  
+  .btn_box {
     display: inline-block;
     position: absolute;
-    top: 400px; right: 25px;
-    height: 40px;  
+    top: 400px;
+    right: 25px;
+    height: 40px;
     display: flex;
     flex-direction: column;
-    align-items: flex-end;     
-}
-.btn_box span{
+    align-items: flex-end;
+  }
+  
+  .btn_box span {
     display: inline-block;
     width: 30px;
     height: 20px;
     border-bottom: solid 2px black;
-}
-
-footer{
+  }
+  
+  footer {
     line-height: 100px;
     background-color: black;
     color: white;
     text-align: center;
-}
-
-@media screen and (max-width: 768px) {
-
-    
-    .box{
-        width: 200px;
-        height: auto;
-        align-items: center;
+  }
+  a {
+    text-decoration:none; 
+  }
+  
+  @media screen and (max-width: 768px) {
+    .br_sp{
+      display: block;
     }
-    .img_01{
-        display: none;
+    .box {
+      width: 200px;
+      height: auto;
+      align-items: center;
+      margin-top: 20px;
     }
-    .img_03{
-        display: none;
+    img{
+      width: 100%;
+      height: auto;
     }
-    .inner{
-        display: none;
+    .img_01 {
+      display: none;
     }
-
-    .img_02{
-        position: static;
-        /* align-items: center; */
-        height: 200px;
-        width: auto;
+    .img_03 {
+      display: none;
     }
-    .left{
-        padding-left: 0%;
-        padding-top: 20px;
-        text-align: center;
+    .inner {
+      display: none;
     }
-    .spimg_01{
-        display: block;
-        width: 100%;
-        height: auto;
-        margin-top: 20px;
+    .img_02 {
+      position: static;
+      /* align-items: center; */
+      height: 200px;
+      width: auto;
     }
-    .spimg_03{
-        display: block;
-        position: absolute;
-        top: 260px;
+    .left {
+      padding-left: 0%;
+      padding-top: 20px;
+      text-align: center;
+    }
+    .spimg_01 {
+      display: block;
+      width: 100%;
+      height: auto;
+      margin-top: 20px;
+    }
+    .spimg_03 {
+      display: block;
+      position: absolute;
+      top: 260px;
     }
     .contents{
-        width: 100%;
-        flex-direction: column;
-        align-items: center;
-        padding: 0%;
+      width: auto;
+      flex-direction: column;
+      align-items: center;
+      padding-left: 5%;
+      padding-right: 5%;
+      margin: 0;
+      display: block;
     }
-    h1{
-        width: 100%;
+    h1 {
+      width: 100%;
     }
-    p{
-        font-size: 20px;
+    .box2{
+      width: auto;
     }
-    .box{
-        margin-top: 20px;
+    p {
+      font-size: 15px;
     }
-    
-}
+  }
+  /*# sourceMappingURL=style.css.map */

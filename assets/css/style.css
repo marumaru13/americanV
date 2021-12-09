@@ -26,7 +26,8 @@ body {
   margin: auto;
   margin-top: 100px;
 }
-.br_sp{
+
+.br_sp {
   display: none;
 }
 
@@ -109,6 +110,11 @@ img {
   transition-duration: 2.0s;
 }
 
+.box2:hover .btn_box span {
+  width: 100%;
+  transition: 1.5s;
+}
+
 .dates, .text {
   font-size: 25px;
   margin-top: 15px;
@@ -138,12 +144,13 @@ footer {
   color: white;
   text-align: center;
 }
+
 a {
-  text-decoration:none; 
+  text-decoration: none;
 }
 
 @media screen and (max-width: 768px) {
-  .br_sp{
+  .br_sp {
     display: block;
   }
   .box {
@@ -152,7 +159,7 @@ a {
     align-items: center;
     margin-top: 20px;
   }
-  img{
+  img {
     width: 100%;
     height: auto;
   }
@@ -187,7 +194,7 @@ a {
     position: absolute;
     top: 260px;
   }
-  .contents{
+  .contents {
     width: auto;
     flex-direction: column;
     align-items: center;
@@ -199,7 +206,7 @@ a {
   h1 {
     width: 100%;
   }
-  .box2{
+  .box2 {
     width: auto;
   }
   p {
