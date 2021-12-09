@@ -26,6 +26,9 @@ body {
   margin: auto;
   margin-top: 100px;
 }
+.br_sp{
+  display: none;
+}
 
 .menu {
   padding-right: 60px;
@@ -80,10 +83,13 @@ h1 {
 }
 
 .contents {
+  width: 1152px;
+  /* height: 630px; */
   display: flex;
   justify-content: space-around;
+  flex-wrap: wrap;
   padding: 0 70px;
-  margin-bottom: 100px;
+  margin: 100px 50px;
 }
 
 img {
@@ -95,6 +101,7 @@ img {
   width: 350px;
   height: 450px;
   position: relative;
+  margin-top: 50px;
 }
 
 .box2:hover {
@@ -133,6 +140,9 @@ footer {
 }
 
 @media screen and (max-width: 768px) {
+  .br_sp{
+    display: block;
+  }
   .box {
     width: 200px;
     height: auto;
