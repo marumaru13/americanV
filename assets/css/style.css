@@ -90,7 +90,7 @@ h1 {
   justify-content: space-around;
   flex-wrap: wrap;
   padding: 0 70px;
-  margin: 100px 50px;
+  margin: 100px auto;
 }
 
 img {
@@ -149,33 +149,32 @@ a {
   text-decoration: none;
 }
 
+.hamburger, #hamburger {
+  display: none;
+}
+
 @media screen and (max-width: 768px) {
   .br_sp {
     display: block;
   }
   .box {
-    width: 200px;
+    width: 150px;
     height: auto;
     align-items: center;
     margin-top: 20px;
+    position: static;
   }
   img {
     width: 100%;
     height: auto;
   }
-  .img_01 {
-    display: none;
-  }
-  .img_03 {
-    display: none;
-  }
-  .inner {
+  .img_01, .img_03, .inner {
     display: none;
   }
   .img_02 {
     position: static;
     /* align-items: center; */
-    height: 200px;
+    height: 150px;
     width: auto;
   }
   .left {
@@ -203,6 +202,11 @@ a {
     margin: 0;
     display: block;
   }
+  .header_items {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+  }
   h1 {
     width: 100%;
   }
@@ -211,6 +215,72 @@ a {
   }
   p {
     font-size: 15px;
+  }
+  .hamburger {
+    width: 28px;
+    height: 30px;
+    display: block;
+  }
+  .hamburger .pate,
+  .hamburger .pate::before,
+  .hamburger .pate::after {
+    width: 100%;
+    height: 5px;
+    background-color: gray;
+    border-radius: 2px;
+    display: block;
+    transition: all .5s ease;
+  }
+  .hamburger .pate {
+    position: relative;
+    top: calc(50% - 3px);
+  }
+  .hamburger .pate::before,
+  .hamburger .pate::after {
+    content: '';
+    position: absolute;
+  }
+  .hamburger .pate::before {
+    top: -9px;
+  }
+  .hamburger .pate::after {
+    top: 9px;
+  }
+  #hamburger:checked + .hamburger .pate {
+    background-color: transparent;
+    /* cursor:pointer; */
+  }
+  #hamburger:checked + .hamburger .pate::before {
+    transform: rotate(45deg) translate(5px, 5px);
+  }
+  #hamburger:checked + .hamburger .pate::after {
+    transform: rotate(-45deg) translate(7px, -8px);
+  }
+  #hamburger {
+    display: none;
+  }
+  /* header-rightの部分 */
+  header {
+    overflow: hidden;
+  }
+  .header-right {
+    /* display: none; */
+    position: fixed;
+    top: 66px;
+    right: -500px;
+    transition: all .5s ease;
+    height: 100%;
+    background-color: rgba(6, 39, 66, 0.534);
+  }
+  .header-right ul {
+    display: block;
+    padding-right: 15px;
+  }
+  .header-right li {
+    margin-top: 10px;
+  }
+  #hamburger:checked ~ .header-right {
+    right: 0;
   }
 }
 /*# sourceMappingURL=style.css.map */
