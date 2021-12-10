@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/assets/css/reset.css">
     <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/assets/css/style.css">
     <title>American Villege</title>
+    <?php wp_head(); ?>
 </head>
 
 <body>
@@ -40,5 +41,4 @@
 
             </div>
         </div>
-        <?php wp_head(); ?>
     </header>

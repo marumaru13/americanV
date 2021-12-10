@@ -57,14 +57,9 @@
     /* 相対位置に指定 */
   }
   
-  .spimg_01 {
+  .spimg_01,.spimg_03{
     display: none;
   }
-  
-  .spimg_03 {
-    display: none;
-  }
-  
   .left {
     padding-left: 100px;
   }
@@ -166,7 +161,7 @@
       width: 100%;
       height: auto;
     }
-    .img_01,.img_03,.inner{
+    .img_01,.img_03{
       display: none;
     }
     .img_02 {
@@ -214,7 +209,6 @@
     p {
       font-size: 15px;
     }
-
 
     // ハンバーガーメニューです
     .hamburger{
@@ -276,12 +270,13 @@
         // width: calc(100% - 80px);
         overflow: hidden;
       }
-      .header-right{
-        /* display: none; */
+      .inner{
+        display: none;
         position: fixed;
         top: 66px;
-        right: -500px;
+        right: 0px;
         transition: all .5s ease;
+        width: auto;
         height: 100%;
         background-color: rgba(6, 39, 66, 0.534);
         
